@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'RougeScript';
+    src: url('./RougeScript-Regular.ttf') format('truetype');
+    /* Add more src lines if you have different font file formats */
+}
+
 @-webkit-keyframes t-arrow-bottom {
     0%, to {
         -moz-transform: translateY(0);
