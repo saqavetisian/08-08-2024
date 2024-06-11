@@ -4,6 +4,25 @@
     /* Add more src lines if you have different font file formats */
 }
 
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gallery div {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.position-center {
+    background-position: center !important;
+}
+
 @-webkit-keyframes t-arrow-bottom {
     0%, to {
         -moz-transform: translateY(0);
@@ -125,7 +144,18 @@
     width: 1px
 }
 
+@media screen and (max-width: 840px) {
+    .gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 @media screen and (max-width: 640px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
     .t-cover {
         background-attachment: scroll;
     }
