@@ -124,6 +124,11 @@
         background-attachment: scroll;
     }
 
+    .t-cover .t-container, .t-cover .t-container_10, .t-cover .t-container_100, .t-cover .t-container_8 {
+        top: unset;
+        bottom: 10px;
+    }
+
     .t-cover__carrier {
         background-attachment: scroll !important;
         background-size: cover;
